@@ -1,0 +1,54 @@
+{
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "search.exclude": { "**/.history": true },
+    "editor.suggestSelection": "first",
+    "editor.minimap.enabled" : false,
+    "explorer.autoReveal": false,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.zoomLevel": 1,
+    "files.autoSave": "afterDelay",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "debug.javascript.usePreview": false,
+    
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "C:\\Users\\sagonzal\\.vimrc",
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.splitEditor"]
+        },
+        {
+            "before": ["o", "o"],
+            "after": ["o", "<Esc>", "k"]
+        },
+        {
+            "before": ["O", "O"],
+            "after": ["O", "<Esc>", "j"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+    "todo-tree.tree.showScanModeButton": false,
+    "python.languageServer": "Microsoft",
+    "go.formatTool": "goimports",
+    "debug.node.autoAttach": "on",
+    "update.mode": "none",
+    "extensions.autoUpdate": false
+}
