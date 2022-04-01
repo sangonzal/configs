@@ -1,4 +1,3 @@
-let mapleader = " "
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -53,6 +52,9 @@ set number
 set backspace=2 " Backspace over new newlines
 
 set nolist
+
+nnoremap <SPACE> <Nop>
+let mapleader=" "
 
 inoremap df <ESC>
 inoremap DF <ESC>
