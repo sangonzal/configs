@@ -1,9 +1,13 @@
+source /Users/santiago/.bash_profile
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export GOPATH=/Users/santiago/go
+export PATH=$GOPATH/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -74,7 +78,7 @@ ZSH_THEME=af-magic
 plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
-
+source <(kubectl completion zsh)
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -98,6 +102,8 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+set -o vi
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -112,8 +118,12 @@ alias gcb='git checkout -b'
 alias gch='git checkout'
 alias gpu='git pull'
 
-set -o vi
+alias air='go run github.com/cosmtrek/air@latest'
+alias gen='go run github.com/99designs/gqlgen generate' 
 
 bindkey -M isearch '^R' history-incremental-search-backward
 bindkey -M isearch '^S' history-incremental-search-forward
-export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+
