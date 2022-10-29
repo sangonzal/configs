@@ -1,54 +1,93 @@
 {
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "search.exclude": { "**/.history": true },
-    "editor.suggestSelection": "first",
-    "editor.minimap.enabled" : false,
-    "explorer.autoReveal": false,
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "window.zoomLevel": 1,
-    "files.autoSave": "afterDelay",
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "debug.javascript.usePreview": false,
-    
-    "vim.vimrc.enable": true,
-    "vim.vimrc.path": "C:\\Users\\sagonzal\\.vimrc",
-    "vim.useSystemClipboard": true,
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["<leader>", "w"],
-            "commands": ["workbench.action.splitEditor"]
-        },
-        {
-            "before": ["o", "o"],
-            "after": ["o", "<Esc>", "k"]
-        },
-        {
-            "before": ["O", "O"],
-            "after": ["O", "<Esc>", "j"]
-        }
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                ">"
-            ],
-            "commands": [
-                "editor.action.indentLines"
-            ]
-        },
-        {
-            "before": [
-                "<"
-            ],
-            "commands": [
-                "editor.action.outdentLines"
-            ]
-        },
-    ],
-    "todo-tree.tree.showScanModeButton": false,
-    "python.languageServer": "Microsoft",
-    "go.formatTool": "goimports",
-    "debug.node.autoAttach": "on",
-    "update.mode": "none",
-    "extensions.autoUpdate": false
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "[go]": { "editor.codeActionsOnSave": { "source.organizeImports": true } },
+  "go.alternateTools": {
+    "go": "/opt/homebrew/bin/go"
+  },
+  "search.exclude": {
+    "**/.history": true
+  },
+  "editor.suggestSelection": "first",
+  "editor.minimap.enabled": false,
+  "explorer.autoReveal": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.autoSave": "afterDelay",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "debug.javascript.usePreview": false,
+  "vim.leader": " ",
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "/Users/santiago/.vimrc",
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    {
+      "before": ["o", "o"],
+      "after": ["o", "<Esc>", "k"]
+    },
+    {
+      "before": ["O", "O"],
+      "after": ["O", "<Esc>", "j"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  "todo-tree.tree.showScanModeButton": false,
+  "go.formatTool": "goimports",
+  "debug.node.autoAttach": "on",
+  "update.mode": "none",
+  "extensions.autoUpdate": false,
+  "editor.accessibilitySupport": "off",
+  "editor.fontSize": 14,
+  "editor.find.cursorMoveOnType": false,
+  "window.zoomLevel": 2,
+  "files.insertFinalNewline": true,
+  "workbench.editor.enablePreview": false,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": false,
+    "typescriptreact": true
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.confirmSync": false,
+  "[sql]": {
+    "editor.defaultFormatter": "bradymholt.pgformatter"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "go.testEnvFile": "${workspaceFolder}/.env",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Visual Studio Dark",
+  "local-history.daysLimit": 2,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.wordWrap": "on"
 }

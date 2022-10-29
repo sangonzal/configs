@@ -3,11 +3,15 @@ source /Users/santiago/.bash_profile
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export ANDROID_HOME=/Users/santiago/Library/Android/sdk
 export GOPATH=/Users/santiago/go
 export PATH=$GOPATH/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/Applications/Visual Studio Code 3.app/Contents/Resources/app/bin"
 export PATH="$PATH:/opt/homebrew/opt/node@16/bin"
+# export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 ZSH_THEME=af-magic
 
@@ -29,9 +33,6 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -105,9 +106,14 @@ alias gch='git checkout'
 alias gpu='git pull'
 alias air='go run github.com/cosmtrek/air@latest'
 alias gen='go run github.com/99designs/gqlgen generate' 
+alias ku='kubectl'
+alias yk='ykman oath code aws'
 
 bindkey -M isearch '^R' history-incremental-search-backward
 bindkey -M isearch '^S' history-incremental-search-forward
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
+ 
 
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export GPG_TTY=$(tty)
